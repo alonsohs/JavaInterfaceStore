@@ -11,6 +11,7 @@ public class MainInterface extends JFrame {
         MainInterface marco = new MainInterface();
         marco.setSize(1200, 720);
         marco.setVisible(true);
+        marco.setExtendedState(6);
         marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
