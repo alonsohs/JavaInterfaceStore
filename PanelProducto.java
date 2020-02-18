@@ -11,15 +11,15 @@ public class PanelProducto extends JPanel {
     JCheckBox seguroCompra;
     JButton botonComprar ;
 
-    public PanelProducto(){
+    public PanelProducto(String nProducto, String nImagen, String precio){
         Color backgroung = new Color(53, 53, 53 );
 
-        nombreProducto.setText("IPhone 11");
+        nombreProducto.setText(nProducto);
         nombreProducto.setHorizontalAlignment(SwingConstants.CENTER);
         nombreProducto.setFont(new Font("Helvetica", Font.BOLD, 35));
         nombreProducto.setForeground(Color.white);
 
-        imagenProducto = new JLabel(new ImageIcon(getClass().getResource("Imagenes/iphone11.png")));
+        imagenProducto = new JLabel(new ImageIcon(getClass().getResource(nImagen)));
 
         Font radioButton = new Font("Gill sans", Font.PLAIN, 16);
         rb1 = new JRadioButton("Color Dorado - 64GB", true);
@@ -38,7 +38,7 @@ public class PanelProducto extends JPanel {
         rb3.setForeground(Color.white);
         buttonGroup.add(rb3);
 
-        etiquetaPrecio = new JLabel("$ 17,000", SwingConstants.CENTER);
+        etiquetaPrecio = new JLabel(("$ " + precio), SwingConstants.CENTER);
         etiquetaPrecio.setFont(new Font("Helvetica", Font.BOLD, 30));
         etiquetaPrecio.setForeground(Color.white);
 
