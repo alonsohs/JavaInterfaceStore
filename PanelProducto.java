@@ -67,6 +67,7 @@ public class PanelProducto extends JPanel {
         caja.add(seguroCompra);
         caja.add(Box.createVerticalStrut(5));
         caja.add(botonComprar);
+        caja.add(Box.createVerticalStrut(30));
         caja.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         setBackground(backgroung);
