@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class PanelBuscador extends JPanel {
-        JLabel empresa;
+      
         JTextField textoBuscador = new JTextField();
 
     public PanelBuscador(){
