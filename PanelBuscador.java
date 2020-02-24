@@ -1,10 +1,8 @@
-import javafx.scene.layout.BorderStroke;
-
 import javax.swing.*;
 import java.awt.*;
 
 public class PanelBuscador extends JPanel {
-      
+
         JTextField textoBuscador = new JTextField();
 
     public PanelBuscador(){
